@@ -341,7 +341,6 @@
     }
     .why_list {
         padding: 0 85px;
-        /* display: flex; */
         flex-direction: row;
         gap: 30px;
     }
@@ -363,6 +362,59 @@
         font: 16px;
         line-height: 26px;
     }
+}
+
+/* HOW SECTION */
+.how_container {
+    margin: 0 25px 120px 25px;
+}
+
+.how_container h3 {
+    color: var(--grey);
+    font-size: 24px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.how_list {
+    margin: 0;
+    padding: 0;
+}
+
+.how_list_item {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.how_list_item:last-of-type {
+    margin-bottom: 80px;
+}
+
+.how_list_num {
+    font-size: 72px;
+    line-height: 72px;
+    color: var(--pale-orange);
+    margin-bottom: 25px;
+}
+
+.how_list_title {
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--dark-grey-blue);
+    margin-bottom: 25px;
+}
+
+.how_list_item p {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--dark-grey-blue);
+    width: 325px;
+    margin: 0 auto;
+}
+
+.how_btn {
+    color: var(--light-cream);
+    margin: 0 auto;
 }
 
 
