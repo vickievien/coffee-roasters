@@ -1,5 +1,6 @@
-import HomeCollection from '../components/home/collection'
-import HomeHero from '../components/home/hero'
+import HomeCollection from '../components/home/Collection'
+import HomeHero from '../components/home/Hero'
+import HomeWhyUs from '../components/home/why'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
     <div>
       <HomeHero />
       <HomeCollection />
-      
+      <HomeWhyUs />
     </div>
   )
 }
