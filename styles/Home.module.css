@@ -50,11 +50,26 @@
     .hero_btn {
         margin: 0;
     }
-
 }
 
 @media only screen and (min-width: 1280px) {
     .hero_container {
         background-image: url('/assets/home/desktop/image-hero-coffeepress.jpg');
+        margin: 0 80px;
+        padding-left: 85px;
+        height: 600px;
+    }
+    .hero_text_container {
+        max-width: 500px;
+    }
+    .hero_text_container h2 {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    .hero_text_container p {
+        font-size: 16px;
+        line-height: 26px;
+        width: 400px;
+        margin: 32px 0 56px 0;
     }    
 }
