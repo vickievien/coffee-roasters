@@ -75,7 +75,7 @@ nav {
 }
 
 nav div {
-  width: 50%;
+  width: 165px;
 }
 
 nav div a {
@@ -122,8 +122,30 @@ nav ul {
 
 
 @media only screen and (min-width: 768px) {
+  nav {
+    padding: 40px;
+  }
+  nav div {
+    width: 235px;
+  }
   .hamburger {
     display: none;
+  }
+  .default-nav {
+    display: flex;
+    gap: 32px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+    color: var(--grey);
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    padding: 50px 80px;
   }
 }
 
