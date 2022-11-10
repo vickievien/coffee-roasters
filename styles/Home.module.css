@@ -211,3 +211,121 @@
         padding-bottom: 24px;
     }
 }
+
+/* WHY US SECTION */
+.why_container {
+    margin: 0 25px 120px 25px;
+    position: relative;
+}
+
+.why_container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: var(--dark-grey-blue);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.why_title_container {
+    text-align: center;
+    padding: 55px 75px 70px 75px;
+    position: relative;
+    z-index: 1;
+    color: var(--light-cream);
+}
+
+.why_title_container h3 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.why_title_container p {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 80%;
+}
+
+.why_list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+    padding: 0 25px;
+}
+
+.why_list_item {
+    text-align: center;
+    background-color: var(--dark-cyan);
+    width: 100%;
+    padding: 70px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.why_icon {
+    width: 72px;
+    height: auto;
+    display: block;
+    margin: 0 auto 55px auto;
+}
+
+.why_item_text_container {
+    color: var(--light-cream);   
+}
+
+.why_item_text_container h4 {
+    margin-bottom: 25px;
+}
+
+.why_item_text_container p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 210px;
+}
+
+@media only screen and (min-width: 768px) {
+    .why_container {
+        margin: 0 40px 145px 40px;
+    }
+    .why_title_container {
+        /* padding: 65px 25px; */
+    }
+    .why_title_container h3 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .why_list {
+        padding: 0 60px;
+    }
+    .why_list_item {
+        text-align: left;
+        padding: 40px 50px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 55px;
+    }
+    .why_icon {
+        width: 55px;
+        height: auto;
+        display: block;
+        margin: 0 0;
+    }
+    .why_item_text_container h4 {
+        margin-bottom: 16px;
+    }
+    .why_item_text_container p {
+        width: 345px;
+    }
+}
+
+
+
+
