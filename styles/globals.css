@@ -115,15 +115,14 @@ nav ul {
   display: none;
 }
 
-
 /* MOBILE NAV */
 .mobile-nav {
   display: block;
   position: absolute;
-  top: 90px;
+  top: 85px;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 110vh;
   background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
   font-family: 'Fraunces', serif;
   font-size: 24px;
@@ -137,7 +136,6 @@ nav ul {
 .mobile-nav li {
   padding-bottom: 32px;
 }
-
 
 @media only screen and (min-width: 768px) {
   nav {
@@ -163,7 +161,7 @@ nav ul {
 
 @media only screen and (min-width: 1280px) {
   nav {
-    padding: 50px 80px;
+    padding: 45px 80px;
   }
 }
 
