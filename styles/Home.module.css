@@ -28,14 +28,33 @@
     margin: 25px auto 40px auto;
 }
 
+.hero_btn {
+    margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
-    .hero-container {
+    .hero_container {
         background-image: url('/assets/home/tablet/image-hero-coffeepress.jpg');
-    }    
+        margin: 0 40px;
+        justify-content: flex-start;
+        padding-left: 60px;
+    }
+    .hero_text_container {
+        text-align: left;
+        max-width: 400px;
+    }
+    .hero_text_container h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .hero_btn {
+        margin: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1280px) {
-    .hero-container {
+    .hero_container {
         background-image: url('/assets/home/desktop/image-hero-coffeepress.jpg');
     }    
 }
