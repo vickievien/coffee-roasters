@@ -502,11 +502,6 @@
         position: relative;
         top: -80px;
     }
-    .how_list {
-        /* display: flex; */
-        /* justify-content: flex-start; */
-        /* gap: 95px; */
-    }
     .how_list_item {
         margin-bottom: 64px;
     } 
@@ -515,8 +510,6 @@
     }
     .how_list_item:first-of-type:before {
         width: calc(1045px - 285px);
-        /* min-width: calc(100vw - 760px); */
-        /* max-width: calc(100vw - 490px); */
         top: -65px;
     }
     .how_list_num {
