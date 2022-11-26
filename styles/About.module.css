@@ -1,3 +1,4 @@
+/* HERO SECTION */
 .hero_container {
     background-image: url('/assets/about/mobile/image-hero-whitecup.jpg');
     margin: 0 24px 120px 24px;
@@ -17,6 +18,7 @@
 
 .hero_text_container h2 {
     line-height: 40px;
+    margin-bottom: 24px;
 }
 
 .hero_text_container p {
@@ -24,9 +26,23 @@
     font-weight: 400;
     line-height: 25px;
     opacity: 80%;
-    margin: 25px auto 40px auto;
 }
 
-.hero_btn {
-    margin: 0 auto;
+@media only screen and (min-width: 768px) {
+    .hero_container {
+        background-image: url('/assets/about/tablet/image-hero-whitecup.jpg');
+        margin: 0 40px 145px 40px;
+        justify-content: flex-start;
+        padding-left: 60px;
+    }
+    .hero_text_container {
+        text-align: left;
+        max-width: 400px;
+    }
+    .hero_text_container h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
+
+
