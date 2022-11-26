@@ -45,4 +45,19 @@
     }
 }
 
-
+@media only screen and (min-width: 1280px) {
+    .hero_container {
+        background-image: url('/assets/about/desktop/image-hero-whitecup.jpg');
+        margin: 0 80px 170px 80px;
+        padding-left: 85px;
+        height: 450px;
+    }
+    .hero_text_container h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }   
+    .hero_text_container p {
+        font-size: 16px;
+        line-height: 26px;
+    }    
+}
