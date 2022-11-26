@@ -1,0 +1,32 @@
+.hero_container {
+    background-image: url('/assets/about/mobile/image-hero-whitecup.jpg');
+    margin: 0 24px 120px 24px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text_container {
+    max-width: 280px;
+    color: var(--light-cream);
+    text-align: center;
+}
+
+.hero_text_container h2 {
+    line-height: 40px;
+}
+
+.hero_text_container p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 80%;
+    margin: 25px auto 40px auto;
+}
+
+.hero_btn {
+    margin: 0 auto;
+}
