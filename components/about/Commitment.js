@@ -4,7 +4,11 @@ const AboutCommit = () => {
     return (
         <section className={styles.commit_container}>
             <div className={styles.commit_img_container}>
-                <img src="/assets/about/mobile/image-commitment.jpg" alt="barista pouring coffee"/>
+                <picture>
+                    <source media="(min-width: 768px)" srcSet="/assets/about/tablet/image-commitment.jpg"/>
+                    <source media="(min-width: 1280px)" srcSet="/assets/about/desktop/image-commitment.jpg"/>
+                    <img src="/assets/about/mobile/image-commitment.jpg" alt="barista pouring coffee"/>
+                </picture>
             </div>
             <div className={styles.commit_text_container}>
                 <h2>Our commitment</h2>
