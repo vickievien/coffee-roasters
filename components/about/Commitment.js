@@ -5,8 +5,8 @@ const AboutCommit = () => {
         <section className={styles.commit_container}>
             <div className={styles.commit_img_container}>
                 <picture>
-                    <source media="(min-width: 768px)" srcSet="/assets/about/tablet/image-commitment.jpg"/>
                     <source media="(min-width: 1280px)" srcSet="/assets/about/desktop/image-commitment.jpg"/>
+                    <source media="(min-width: 768px)" srcSet="/assets/about/tablet/image-commitment.jpg"/>
                     <img src="/assets/about/mobile/image-commitment.jpg" alt="barista pouring coffee"/>
                 </picture>
             </div>
