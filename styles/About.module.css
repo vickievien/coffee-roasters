@@ -70,9 +70,6 @@
 .commit_img_container  {
     height: 400px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     margin-bottom: 48px;
 }
@@ -99,4 +96,28 @@
     color: var(--dark-grey-blue);
     font-size: 15px;
     line-height: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .commit_container {
+        margin: 0 40px 145px 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+    .commit_img_container  {
+        height: 470px;
+        width: 280px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    .commit_text_container {
+        text-align: left;
+        flex: 1;
+    }
+    .commit_text_container h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
 }
