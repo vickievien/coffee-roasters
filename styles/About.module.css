@@ -120,3 +120,23 @@
         margin-bottom: 32px;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    .commit_container {
+        margin: 0 auto 170px auto;
+        align-items: center;
+        gap: 125px;
+        width: 1110px;
+    }
+    .commit_img_container  {
+        height: 520px;
+    }
+    .commit_text_container h2 {
+        font-size: 40px;
+    }
+    .commit_text_container p {
+        font-size: 40px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
