@@ -64,7 +64,7 @@
 
 /* COMMITMENT SECTION */
 .commit_container {
-    margin: 0 24px 120px 24px;
+    margin: 0 24px 198px 24px;
 }
 
 .commit_img_container  {
@@ -139,4 +139,48 @@
         font-size: 16px;
         line-height: 26px;
     }
+}
+
+/* QUALITY SECTION */
+.quality_container {
+    margin: 0 24px 120px 24px;
+    background-color: var(--dark-grey-blue);
+    height: 510px;
+    border-radius: 10px;
+    
+}
+
+.quality_img_container {
+    width: 280px;
+    height: 156px;
+    border-radius: 8px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -78px;
+}
+
+.quality_img_container img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.quality_text_container {
+    color: var(--light-cream);
+    text-align: center;
+}
+
+.quality_text_container h2 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.quality_text_container p {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 80%;
+    padding: 0 24px;
 }
