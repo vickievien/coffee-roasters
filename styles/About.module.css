@@ -123,7 +123,7 @@
 
 @media only screen and (min-width: 1280px) {
     .commit_container {
-        margin: 0 auto 170px auto;
+        margin: 0 auto 260px auto;
         align-items: center;
         gap: 125px;
         width: 1110px;
@@ -188,7 +188,7 @@
     .quality_container {
         margin: 0 40px 145px 40px;
         height: 490px;
-        padding-bottom: 70px;
+        /* padding-bottom: 70px; */
     }
     .quality_img_container {
         width: 575px;
@@ -208,5 +208,39 @@
         padding: 0;
         width: 540px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .quality_container {
+        margin: 0 80px 170px 80px;
+        height: 475px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 125px;
+        padding: 0 85px;
+    }
+    .quality_img_container {
+        width: 445px;
+        height: auto;
+        top: -90px;
+        margin: 0;
+    }
+    .quality_text_container { 
+        position:static;
+        top: 0;
+        text-align: left;
+        margin-top: 85px;
+    }
+    .quality_text_container h2 {
+        font-size: 40px;
+        width: 540px;
+        margin-bottom: 32px;
+    }
+    .quality_text_container p {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0;
     }
 }
