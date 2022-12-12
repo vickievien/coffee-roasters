@@ -293,3 +293,30 @@
     font-size: 16px;
     line-height: 26px;
 }
+
+@media only screen and (min-width: 768px) {
+    .headquarter_container {
+        margin: 0 40px 145px 40px;
+    }
+    .headquarter_title {
+        text-align: left;
+    }
+    .headquarter_list {
+        display: flex;
+    }
+    .headquarter_list_item {
+        margin-bottom: 0;
+        flex: 1;
+    }
+    .headquarter_img_container {
+        display: block;
+    }
+    .headquarter_list h3 {
+        text-align: left;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .headquarter_info_container {
+        text-align: left;
+    }
+}
