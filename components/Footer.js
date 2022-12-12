@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import FacebookLogo from "./svg/Facebook";
+import InstagramLogo from "./svg/Instagram";
+import TwitterLogo from "./svg/Twitter";
 
 
 const Footer = () => {
@@ -18,17 +21,17 @@ const Footer = () => {
             <ul className="social-list">
                 <li>
                     <Link href="https://www.facebook.com/" target="_blank">
-                        <img src="/assets/shared/desktop/icon-facebook.svg" alt="Facebook" />
+                        <FacebookLogo />
                     </Link>
                 </li>
                 <li>
                     <Link href="https://twitter.com/" target="_blank">
-                        <img src="/assets/shared/desktop/icon-twitter.svg" alt="Twitter" />
+                        <TwitterLogo />
                     </Link>
                 </li>
                 <li>
                     <Link href="https://www.instagram.com/" target="_blank">
-                        <img src="/assets/shared/desktop/icon-instagram.svg" alt="Instagram" />
+                        <InstagramLogo />
                     </Link>
                 </li>
             </ul>
