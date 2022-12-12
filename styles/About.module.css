@@ -100,7 +100,7 @@
 
 @media only screen and (min-width: 768px) {
     .commit_container {
-        margin: 0 40px 145px 40px;
+        margin: 0 40px 305px 40px;
         display: flex;
         justify-content: space-between;
         gap: 70px;
@@ -147,7 +147,6 @@
     background-color: var(--dark-grey-blue);
     height: 510px;
     border-radius: 10px;
-    
 }
 
 .quality_img_container {
@@ -183,4 +182,31 @@
     line-height: 25px;
     opacity: 80%;
     padding: 0 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    .quality_container {
+        margin: 0 40px 145px 40px;
+        height: 490px;
+        padding-bottom: 70px;
+    }
+    .quality_img_container {
+        width: 575px;
+        height: 320px;
+        top: -160px;
+        margin-bottom: 65px;
+    }
+    .quality_text_container { 
+        position: relative;
+        top: -160px;
+    }
+    .quality_text_container h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .quality_text_container p {
+        padding: 0;
+        width: 540px;
+        margin: 0 auto;
+    }
 }
