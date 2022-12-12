@@ -320,3 +320,17 @@
         text-align: left;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    .headquarter_container {
+        margin: 0 auto 170px auto;
+        width: 1045px;
+    }
+    .headquarter_img_container {
+        margin-bottom: 45px;
+    }
+    .headquarter_list h3 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+}

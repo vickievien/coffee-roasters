@@ -26,8 +26,7 @@ const AboutHeadquarter = () => {
                     <div className={styles.headquarter_info_container}>
                         <p className={styles.headquarter_address}>1528 Eglinton Avenue <br />
                             Toronto <br />
-                            Ontario <br />
-                            M4P 1A6
+                            Ontario M4P 1A6
                         </p>
                         <p className={styles.headquarter_phone}>+1 416 485 2997</p>
                     </div>
