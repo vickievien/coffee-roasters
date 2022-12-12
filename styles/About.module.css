@@ -244,3 +244,52 @@
         margin: 0;
     }
 }
+
+/* HEADQUARTER SECTION */
+.headquarter_container {
+    margin: 0 24px 120px 24px;
+}
+
+.headquarter_title {
+    color: #83888F;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.headquarter_list {
+    
+}
+
+.headquarter_list_item {
+    margin-bottom: 80px;
+}
+
+.headquarter_list_item:last-child {
+    margin-bottom: 0;
+}
+
+.headquarter_img_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.headquarter_img_container img {
+    display: block;
+}
+
+.headquarter_list h3 {
+    text-align: center;
+    color: var(--dark-grey-blue);
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.headquarter_info_container {
+    text-align: center;
+    color: var(--dark-grey-blue);
+    font-size: 16px;
+    line-height: 26px;
+}
