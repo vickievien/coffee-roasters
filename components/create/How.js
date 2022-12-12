@@ -3,7 +3,6 @@ import styles from '../../styles/Create.module.css';
 const CreateHow = () => {
     return (
         <section className={styles.how_container}>
-            <h3>How it works</h3>
             <ol className={styles.how_list}>
                 <li className={styles.how_list_item}>
                     <div className={styles.circle}></div>
