@@ -1,6 +1,10 @@
+import CreateHero from "../components/create/Hero";
+
 const Create = () => {
     return ( 
-        <h2>Create</h2>
+        <div>
+            <CreateHero />
+        </div>
      );
 }
  
