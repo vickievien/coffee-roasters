@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from '../../styles/Create.module.css';
+import Link from 'next/link';
 
 const CreateOption = () => {
     const coffeeHowList = [
@@ -87,25 +88,42 @@ const CreateOption = () => {
         'How often should we deliver?',  
     ]
 
+    const asideList = ['Preferences', 'Bean Type', 'Quantity', 'Grind Option', 'Deliveries']
+
     const [showSection, setShowSection] = useState(false)
     
     const toggleShowSection = () => {
         setShowSection(!showSection)
     }
 
-    const allListMapped = allLists.map((list, i) => {
+    const [selected, setSelected] = useState(false);
+    const toggleSelected = () => {
+        setSelected(!selected);
+    }
+
+    const getKey = (e, key) => {
+        console.log(e.target);
+        console.log('key index:', key);
+
+        // onClick={e => getKey(e, key)}
+    }
+
+    const allListMapped = allLists.map((list, index, key) => {
         return (
-            <section key={list} className={styles.section_container}>
+            <section key={list[index]} id={asideList[index]} className={styles.section_container} onClick={e => getKey(e, key)}>
                 <div className={styles.section_title_container}>
-                    <h2 className={styles.question_title} key={`${list}_q`}>{questionList[i]}</h2>
+                    <h2 className={styles.question_title} key={questionList[index]} >{questionList[index]}</h2>
                     <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow" onClick={toggleShowSection}/>
                 </div>
                 {showSection ?
                 <div className={styles.section_cards_container}>
                 {
-                    list.map(card => {
+                    list.map((card, i) => {
                         return (
-                            <article key={`${list}_${card}`} className={styles.card_container}>
+                            <article key={card.title} 
+                            className={`${styles.card_container} ${selected ? `${styles.selected}` : ""}`}
+                            onClick={toggleSelected}
+                            >
                                 <h3 className={styles.card_title}>{card.title}</h3>
                                 <p className={styles.card_description}>{card.description}</p>
                             </article>
@@ -116,13 +134,32 @@ const CreateOption = () => {
                 :
                 ""}
             </section>
+        )
+    })
 
+    const asideListItems = asideList.map((listItem, i) => {
+        return (
+            <Link key={i} href={`#${listItem}`} className={styles.list_item_link}>
+                <li className={styles.list_item}>
+                    <div className={styles.list_num_wrapper}>
+                        <p className={styles.list_num}>0{i+1}</p>
+                    </div>
+                    <p className={styles.list_title}>{listItem}</p>
+                </li>
+            </Link>
         )
     })
 
     return (
         <section className={styles.option_container}>
-            {allListMapped}
+            <aside className={styles.aside}>
+                <ol className={styles.aside_order_list}>
+                    {asideListItems}
+                </ol>
+            </aside>
+            <div className={styles.main}>
+                {allListMapped}
+            </div>
         </section>
     );
 }
