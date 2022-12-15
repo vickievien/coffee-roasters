@@ -204,3 +204,49 @@
         line-height: 26px;
     }
 }
+
+/* OPTION SECTION */
+.option_container {
+    margin: 0 24px 120px 24px;
+}
+
+.section_container {
+    margin-bottom: 95px;
+}
+
+.section_title_container {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.question_title {
+    color: var(--grey);
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.card_container {
+    margin-bottom: 16px;
+    padding: 24px;
+    background-color: var(--lightest-grey);
+    border-radius: 8px;
+    color: var(--dark-grey-blue);
+}
+
+.selected {
+    background-color: var(--dark-cyan);
+    color: white;    
+}
+
+.card_title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card_description {
+    font-size: 16px;
+    line-height: 26px;
+}
