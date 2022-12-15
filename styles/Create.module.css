@@ -285,7 +285,7 @@
 
 @media only screen and (min-width: 1280px) {
     .option_container {
-        margin: 0 80px 200px 80px;
+        margin: 0 0 88px 0;
         display: flex;
         gap: 125px;
         justify-content: center;
@@ -339,13 +339,13 @@
     .list_title:hover {
         opacity: 100%;
     }
-    .main {
-
-    }
     .section_container {
         width: 730px;
         margin-bottom: 88px;
     }    
+    .section_container:last-of-type {
+        margin-bottom: 0;
+    }
     .section_title_container {
         margin-bottom: 56px;
     }
