@@ -6,6 +6,7 @@
   --pale-orange: #FDD6BA;
   --light-cream: #FEFCF7;
   --grey: #83888F;
+  --lightest-grey: #F4F1EB;
   --light-cyan: #66D2CF;
 }
 
@@ -232,6 +233,14 @@ footer .logo path:first-of-type {
   gap: 25px;
 }
 
+footer .social-logo {
+  fill: var(--light-cream);
+  transition: 0.3s ease-in-out;
+}
+footer .social-logo:hover {
+  fill: var(--pale-orange);
+}
+
 @media only screen and (min-width: 768px) {
   footer {
     margin: 0 40px 72px 40px;
@@ -274,13 +283,6 @@ footer .logo path:first-of-type {
   }
   .footer-link-list li a:hover {
     color: var(--light-cream);
-  }
-  footer .social-logo {
-    fill: var(--light-cream);
-    transition: 0.3s ease-in-out;
-  }
-  footer .social-logo:hover {
-    fill: var(--pale-orange);
   }
 }
 
