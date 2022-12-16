@@ -101,15 +101,20 @@ const CreateOption = () => {
         },
     ]
 
-    const [showSection, setShowSection] = useState(false)
-    
-    const toggleShowSection = () => {
-        setShowSection(!showSection);
+    const [showStep, setShowStep] = useState({})
+    const toggleShowStep = (step) => {
+        setShowStep({
+            ...showStep,
+            [step]: !showStep[step],
+        })
     }
 
-    const [selected, setSelected] = useState(false);
-    const toggleSelected = () => {
-        setSelected(!selected);
+    const [selected, setSelected] = useState({});
+    const toggleSelected = (card) => {
+        setSelected({
+            ...selected,
+            [card]: !selected[card],
+        })
     }
 
     const mappedList = optionList.map((list, e) => {
@@ -117,16 +122,16 @@ const CreateOption = () => {
             <section key={list.step} id={list.step} className={styles.section_container}>
                 <div className={styles.section_title_container}>
                     <h2 className={styles.question_title} key={list.question} >{list.question}</h2>
-                    <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow" onClick={toggleShowSection}/>
+                    <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow" onClick={() => {toggleShowStep(list.step)}}/>
                 </div>
-                {showSection ?
+                {showStep[list.step] ?
                 <div className={styles.section_cards_container}>
                 {
                     list.list.map(card => {
                         return (
                             <article key={card.title} 
-                            className={`${styles.card_container} ${selected ? `${styles.selected}` : ""}`}
-                            onClick={toggleSelected}
+                            className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`}
+                            onClick={() => {toggleSelected(card.title)}}
                             >
                                 <h3 className={styles.card_title}>{card.title}</h3>
                                 <p className={styles.card_description}>{card.description}</p>
