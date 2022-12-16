@@ -110,10 +110,11 @@ const CreateOption = () => {
     }
 
     const [selected, setSelected] = useState({});
-    const toggleSelected = (card) => {
+    
+    const toggleSelected = (cardTitle) => {
         setSelected({
-            ...selected,
-            [card]: !selected[card],
+            // ...selected,
+            [cardTitle]: !selected[cardTitle],
         })
     }
 
@@ -129,7 +130,7 @@ const CreateOption = () => {
                 {
                     list.list.map(card => {
                         return (
-                            <article key={card.title} 
+                            <article key={card.title}
                             className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`}
                             onClick={() => {toggleSelected(card.title)}}
                             >
@@ -146,7 +147,7 @@ const CreateOption = () => {
         )
     })
 
-    const mappedAside = optionList.map((list, i) => {
+    const mappedAside = optionList.map((list) => {
         return (
             <Link key={list.step} href={`#${list.step}`} className={styles.list_item_link}>
                 <li className={styles.list_item}>
