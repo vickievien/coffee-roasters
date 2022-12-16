@@ -5,6 +5,7 @@ import Link from 'next/link';
 const CreateOption = () => {
     const optionList = [
         {
+            step_num: 1,
             step: 'Preferences',
             question: 'How do you drink your coffee?',
             list: [
@@ -23,6 +24,7 @@ const CreateOption = () => {
             ]
         },
         {
+            step_num: 2,
             step: 'Bean Type',
             question: 'What type of coffee?',
             list: [
@@ -41,6 +43,7 @@ const CreateOption = () => {
             ]
         },
         {
+            step_num: 3,
             step: 'Quantity',
             question: 'How much would you like?',
             list: [
@@ -59,6 +62,7 @@ const CreateOption = () => {
             ]
         },
         {
+            step_num: 4,
             step: 'Grind Option',
             question: 'Want us to grind them?',
             list: [
@@ -77,6 +81,7 @@ const CreateOption = () => {
             ]
         },
         {
+            step_num: 5,
             step: 'Deliveries',
             question: 'How often should we deliver?',
             list: [
@@ -99,7 +104,7 @@ const CreateOption = () => {
     const [showSection, setShowSection] = useState(false)
     
     const toggleShowSection = () => {
-        setShowSection(!showSection)
+        setShowSection(!showSection);
     }
 
     const [selected, setSelected] = useState(false);
@@ -107,7 +112,7 @@ const CreateOption = () => {
         setSelected(!selected);
     }
 
-    const mappedList = optionList.map(list => {
+    const mappedList = optionList.map((list, e) => {
         return (
             <section key={list.step} id={list.step} className={styles.section_container}>
                 <div className={styles.section_title_container}>
@@ -141,7 +146,7 @@ const CreateOption = () => {
             <Link key={list.step} href={`#${list.step}`} className={styles.list_item_link}>
                 <li className={styles.list_item}>
                     <div className={styles.list_num_wrapper}>
-                        <p className={styles.list_num}>0{i+1}</p>
+                        <p className={styles.list_num}>0{list.step_num}</p>
                     </div>
                     <p className={styles.list_title}>{list.step}</p>
                 </li>
