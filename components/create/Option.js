@@ -113,7 +113,7 @@ const CreateOption = () => {
     
     const toggleSelected = (cardTitle) => {
         setSelected({
-            // ...selected,
+            ...selected,
             [cardTitle]: !selected[cardTitle],
         })
     }
