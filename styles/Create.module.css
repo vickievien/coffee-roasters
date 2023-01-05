@@ -276,6 +276,7 @@
     .card_container {
         margin-bottom: 0;
         padding: 32px 25px;
+        width: 223px;
     }
     .card_title {
         margin-bottom: 24px;
@@ -358,6 +359,7 @@
     .card_container {
         padding: 32px 28px;
         transition: 0.3s ease-in-out;
+        width: 228px;
     }
     .card_container:hover {
         background-color: var(--pale-orange);
