@@ -1,0 +1,66 @@
+.hero_container {
+    background-image: url('/assets/plan/mobile/image-hero-blackcup.jpg');
+    margin: 0 24px 120px 24px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text_container {
+    max-width: 280px;
+    color: var(--light-cream);
+    text-align: center;
+}
+
+.hero_text_container h2 {
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+.hero_text_container p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero_container {
+        background-image: url('/assets/plan/tablet/image-hero-blackcup.jpg');
+        margin: 0 40px 145px 40px;
+        justify-content: flex-start;
+        padding-left: 60px;
+    }
+    .hero_text_container {
+        text-align: left;
+        max-width: 398px;
+    }
+    .hero_text_container h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero_container {
+        background-image: url('/assets/plan/desktop/image-hero-blackcup.jpg');
+        margin: 0 80px 170px 80px;
+        padding-left: 85px;
+        height: 450px;
+    }
+    .hero_text_container {
+        max-width: 500px;
+    }
+    .hero_text_container h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }   
+    .hero_text_container p {
+        font-size: 16px;
+        line-height: 26px;
+        width: 445px;
+    }    
+}
