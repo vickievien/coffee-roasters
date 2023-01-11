@@ -26,13 +26,14 @@ const DrinkList = () => {
 
     const icedDrinkList = icedDrinks.map(drink => {
         return (
-            <article key={drink.id}>
-                <div>
+            <article className={styles.card_container} key={drink.id}>
+                <div className={styles.list_img_container}>
                     <img src={drink.image} alt={drink.title} />
                 </div>
-                <div>
+                <div className={styles.list_text_container}>
                     <h2>{drink.title}</h2>
                     <p>{drink.description}</p>
+                    <h4>Ingredients:</h4>
                     <p>{drink.ingredients}</p>
                 </div>
             </article>
@@ -41,13 +42,14 @@ const DrinkList = () => {
 
     const hotDrinkList = hotDrinks.map(drink => {
         return (
-            <article key={drink.id}>
-                <div>
+            <article className={styles.card_container} key={drink.id}>
+                <div className={styles.list_img_container}>
                     <img src={drink.image} alt={drink.title} />
                 </div>
-                <div>
+                <div className={styles.list_text_container}>
                     <h2>{drink.title}</h2>
                     <p>{drink.description}</p>
+                    <h4>Ingredients:</h4>
                     <p>{drink.ingredients}</p>
                 </div>
             </article>
