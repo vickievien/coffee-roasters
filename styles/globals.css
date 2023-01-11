@@ -138,6 +138,7 @@ nav ul {
   text-align: center;
   color: var(--dark-grey-blue);
   padding: 40px 0;
+  z-index: 1;
 }
 
 .mobile-nav li {
@@ -147,6 +148,9 @@ nav ul {
 @media only screen and (min-width: 768px) {
   nav {
     padding: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   nav div {
     width: 235px;
