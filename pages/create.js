@@ -4,11 +4,11 @@ import CreateOption from "../components/create/Option";
 
 const Create = () => {
     return ( 
-        <div>
+        <main>
             <CreateHero />
             <CreateHow />
             <CreateOption />
-        </div>
+        </main>
      );
 }
  

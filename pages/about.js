@@ -5,12 +5,12 @@ import AboutQuality from '../components/about/Quality';
 
 const About = () => {
     return (
-        <div>
+        <main>
             <AboutHero />
             <AboutCommit />
             <AboutQuality />
             <AboutHeadquarter />
-        </div>
+        </main>
     );
 }
  
