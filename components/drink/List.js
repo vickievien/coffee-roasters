@@ -34,7 +34,7 @@ const DrinkList = () => {
                     <h2>{drink.title}</h2>
                     <p>{drink.description}</p>
                     <h4>Ingredients:</h4>
-                    <p>{drink.ingredients}</p>
+                    <p>{drink.ingredients.join(", ")}</p>
                 </div>
             </article>
         )
@@ -50,7 +50,7 @@ const DrinkList = () => {
                     <h2>{drink.title}</h2>
                     <p>{drink.description}</p>
                     <h4>Ingredients:</h4>
-                    <p>{drink.ingredients}</p>
+                    <p>{drink.ingredients.join(", ")}</p>
                 </div>
             </article>
         )
