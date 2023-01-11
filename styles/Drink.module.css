@@ -46,8 +46,9 @@
 
 @media only screen and (min-width: 1280px) {
     .hero_container {
-        background-image: url('/assets/plan/desktop/image-hero-blackcup.jpg');
-        margin: 0 80px 320px 80px;
+        background-image: url('/assets/about/desktop/image-hero-whitecup.jpg');
+        background-position: bottom left;
+        margin: 0 80px 270px 80px;
         padding-left: 85px;
         height: 450px;
     }
@@ -163,7 +164,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 60px;
-        row-gap: 30px;
     }
     .card_container {
         height: 70%;
@@ -171,23 +171,15 @@
         margin-right: auto;
     }
     .list_img_container {
-        width: 370px;
-        height: 400px;
-        top: -150px;
-        margin-bottom: 40px;
+        width: 80%;
+        height: 225px;
+        top: -100px;
+        margin-bottom: 30px;
     }
     .list_text_container { 
-        top: -150px;
-    }
-    .list_text_container h2 {
-        font-size: 40px;
-    }
-    .list_text_container h4 {
-        font-size: 20px;
+        top: -100px;
     }
     .list_text_container p {
-        font-size: 18px;
-        line-height: 28px;
         width: 70%;
     }
 }
