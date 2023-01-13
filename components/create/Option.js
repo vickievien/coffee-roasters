@@ -126,21 +126,21 @@ const CreateOption = () => {
                     <img src="/assets/plan/desktop/icon-arrow.svg" alt="arrow" onClick={() => {toggleShowStep(list.step)}}/>
                 </div>
                 {showStep[list.step] ?
-                <div className={styles.section_cards_container}>
-                {
-                    list.list.map(card => {
-                        return (
-                            <article key={card.title}
-                            className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`}
-                            onClick={() => {toggleSelected(card.title)}}
-                            >
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <p className={styles.card_description}>{card.description}</p>
-                            </article>
-                        )
-                    })
-                }
-                </div> 
+                <form className={styles.section_cards_container}>
+                    {
+                        list.list.map(card => {
+                            return (
+                                <div key={card.title} className={`${styles.card_container} ${styles.card_title} ${selected[card.title] ? `${styles.selected}` : ""}`} onClick={() => {toggleSelected(card.title)}} >
+                                    <input type="hidden" id={card.title} value={card.title} name={card} />
+                                    <label htmlFor={card.title}>
+                                        <h3 className={styles.card_title}>{card.title}</h3>
+                                        <p className={styles.card_description}>{card.description}</p>
+                                    </label>
+                                </div>
+                            )
+                        })
+                    }
+                </form> 
                 :
                 ""}
             </section>
@@ -175,3 +175,14 @@ const CreateOption = () => {
 }
  
 export default CreateOption;
+
+
+                                
+                            
+                            {/* <article key={card.title}
+                            className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`}
+                            onClick={() => {toggleSelected(card.title)}}
+                            >
+                                <h3 className={styles.card_title}>{card.title}</h3>
+                                <p className={styles.card_description}>{card.description}</p>
+                            </article> */}
