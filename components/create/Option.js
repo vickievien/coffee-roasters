@@ -130,7 +130,7 @@ const CreateOption = () => {
                     {
                         list.list.map(card => {
                             return (
-                                <div key={card.title} className={`${styles.card_container} ${styles.card_title} ${selected[card.title] ? `${styles.selected}` : ""}`} onClick={() => {toggleSelected(card.title)}} >
+                                <div key={card.title} className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`} onClick={() => {toggleSelected(card.title)}} >
                                     <input type="hidden" id={card.title} value={card.title} name={card} />
                                     <label htmlFor={card.title}>
                                         <h3 className={styles.card_title}>{card.title}</h3>
