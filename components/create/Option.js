@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from '../../styles/Create.module.css';
 import Link from 'next/link';
 
-const CreateOption = () => {
+const CreateOption = (props) => {
     const optionList = [
         {
             step_num: 1,
@@ -100,21 +100,33 @@ const CreateOption = () => {
             ]
         },
     ]
+    
+    // const [selected, setSelected] = useState({});
+    
+    // const toggleSelected = (cardTitle) => {
+    //     setSelected({
+    //         ...selected,
+    //         [cardTitle]: !selected[cardTitle],
+    //     })
+    // }
 
+    const [selected, setSelected] = useState([]);
+
+    const handleInputChange = (e) => {
+        const value = e.target.value;
+        const card = e.target.card;
+
+        setSelected([...selected, value]);
+
+        console.log(selected);
+        console.log(card);
+    }
+    
     const [showStep, setShowStep] = useState({})
     const toggleShowStep = (step) => {
         setShowStep({
             ...showStep,
             [step]: !showStep[step],
-        })
-    }
-
-    const [selected, setSelected] = useState({});
-    
-    const toggleSelected = (cardTitle) => {
-        setSelected({
-            ...selected,
-            [cardTitle]: !selected[cardTitle],
         })
     }
 
@@ -130,8 +142,21 @@ const CreateOption = () => {
                     {
                         list.list.map(card => {
                             return (
-                                <div key={card.title} className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`} onClick={() => {toggleSelected(card.title)}} >
-                                    <input type="hidden" id={card.title} value={card.title} name={card} />
+                                <div key={card.title} 
+                                className={`${styles.card_container} 
+                                ${selected.includes(card.title) ? `${styles.selected}` : ""}
+                                
+                                `} 
+                                // onClick={() => {toggleSelected(card.title)}} 
+                                >
+                                    <input 
+                                        name={card} 
+                                        type="radio" 
+                                        id={card.title} 
+                                        value={card.title}
+                                        selected={card.title} 
+                                        onChange={handleInputChange}
+                                    />
                                     <label htmlFor={card.title}>
                                         <h3 className={styles.card_title}>{card.title}</h3>
                                         <p className={styles.card_description}>{card.description}</p>
@@ -175,14 +200,3 @@ const CreateOption = () => {
 }
  
 export default CreateOption;
-
-
-                                
-                            
-                            {/* <article key={card.title}
-                            className={`${styles.card_container} ${selected[card.title] ? `${styles.selected}` : ""}`}
-                            onClick={() => {toggleSelected(card.title)}}
-                            >
-                                <h3 className={styles.card_title}>{card.title}</h3>
-                                <p className={styles.card_description}>{card.description}</p>
-                            </article> */}
